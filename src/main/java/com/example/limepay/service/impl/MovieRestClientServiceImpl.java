@@ -3,6 +3,7 @@ package com.example.limepay.service.impl;
 import com.example.limepay.configuration.properties.MoviesApiProperties;
 import com.example.limepay.model.client.MoviesApiResponse;
 import com.example.limepay.service.MovieRestClientService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -18,6 +19,7 @@ public class MovieRestClientServiceImpl implements MovieRestClientService {
         this.moviesApiProperties = moviesApiProperties;
     }
 
+    @Cacheable (value = "moviesCache", key = "#page")
     @Override
     public MoviesApiResponse getMovies(int page) {
 
