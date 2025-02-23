@@ -1,19 +1,25 @@
 package com.example.limepay.service.impl;
 
+import com.example.limepay.error.exception.NoDirectorsFound;
 import com.example.limepay.model.client.MoviesApiResponse;
 import com.example.limepay.model.director.DirectorsResponse;
 import com.example.limepay.service.MovieDirectorService;
 import com.example.limepay.service.MovieRestClientService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 @Service
 public class MovieDirectorServiceImpl implements MovieDirectorService {
 
-    @Autowired
-    private MovieRestClientService movieRestClientService;
+    private final MovieRestClientService movieRestClientService;
+
+    public MovieDirectorServiceImpl(MovieRestClientService movieRestClientService) {
+        this.movieRestClientService = movieRestClientService;
+    }
 
     @Override
     public DirectorsResponse getDirectorsWithMoreThanXMovies(int threshold) {
@@ -35,6 +41,10 @@ public class MovieDirectorServiceImpl implements MovieDirectorService {
                         }
                     });
         } while(page++ < totalPages);
+
+        if (directors.isEmpty()) {
+            throw new NoDirectorsFound(String.format("No directors found with more than %d directed movies", threshold));
+        }
 
         return DirectorsResponse
                 .builder()
