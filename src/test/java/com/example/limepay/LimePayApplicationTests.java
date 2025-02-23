@@ -1,46 +1,35 @@
 package com.example.limepay;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
+import com.example.limepay.config.ApplicationTestConfiguration;
+import com.example.limepay.config.TestCacheConfig;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInstance;
+import org.mockserver.integration.ClientAndServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.web.servlet.MockMvc;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = {LimePayApplication.class})
+@SpringBootTest
 @AutoConfigureMockMvc
-class LimePayApplicationTests {
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@Import({ApplicationTestConfiguration.class, TestCacheConfig.class})
+public class LimePayApplicationTests {
 
     protected static final String BASE_PATH = "/api/directors";
 
     protected static final String GET_DIRECTORS_BY_MOVIE_DIRECTED_API = BASE_PATH + "/by-movie-count";
 
-    protected static final ObjectMapper objectMapper = new ObjectMapper();
+    @BeforeEach
+    void setUp() {
+        mockServer.reset();
+    }
 
     @Autowired
     protected MockMvc mockMvc;
 
-    @BeforeClass
-    public static void beforeClass() {
-    }
+    @Autowired
+    protected ClientAndServer mockServer;
 
-    @Before
-    public void before() {
-
-    }
-
-    @AfterClass
-    public static void afterClass() {
-    }
-
-    @After
-    public void after() {
-
-    }
 }

@@ -1,0 +1,84 @@
+{
+  "page": 2,
+  "per_page": 10,
+  "total": 15,
+  "total_pages": 2,
+  "data": [
+    {
+      "title": "Dunkirk",
+      "year": 2017,
+      "rated": "PG-13",
+      "released": "2017-07-21",
+      "runtime": "106 min",
+      "genre": "Action, Drama, History",
+      "director": "Christopher Nolan",
+      "writer": "Christopher Nolan",
+      "actors": "Fionn Whitehead, Barry Keoghan, Mark Rylance"
+    },
+    {
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "rated": "PG-13",
+      "released": "2012-07-20",
+      "runtime": "164 min",
+      "genre": "Action, Adventure",
+      "director": "Christopher Nolan",
+      "writer": "Jonathan Nolan, Christopher Nolan",
+      "actors": "Christian Bale, Tom Hardy, Anne Hathaway"
+    },
+    {
+      "title": "Memento",
+      "year": 2000,
+      "rated": "R",
+      "released": "2001-05-25",
+      "runtime": "113 min",
+      "genre": "Mystery, Thriller",
+      "director": "Christopher Nolan",
+      "writer": "Jonathan Nolan, Christopher Nolan",
+      "actors": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano"
+    },
+    {
+      "title": "Fight Club",
+      "year": 1999,
+      "rated": "R",
+      "released": "1999-10-15",
+      "runtime": "139 min",
+      "genre": "Drama",
+      "director": "David Fincher",
+      "writer": "Chuck Palahniuk, Jim Uhls",
+      "actors": "Brad Pitt, Edward Norton, Meat Loaf"
+    },
+    {
+      "title": "Gone Girl",
+      "year": 2014,
+      "rated": "R",
+      "released": "2014-10-03",
+      "runtime": "149 min",
+      "genre": "Drama, Mystery, Thriller",
+      "writer": "Gillian Flynn",
+      "actors": "Ben Affleck, Rosamund Pike, Neil Patrick Harris"
+    },
+    {
+      "title": "Random Movie 1",
+      "year": 2021,
+      "rated": "PG",
+      "released": "2021-06-15",
+      "runtime": "95 min",
+      "genre": "Comedy",
+      "director": "Random Director",
+      "writer": "Random Writer",
+      "actors": "Actor A, Actor B, Actor C"
+    },
+    {
+      "title": "Random Movie 2",
+      "year": 2022,
+      "rated": "PG-13",
+      "released": "2022-08-20",
+      "runtime": "110 min",
+      "genre": "Action",
+      "director": "Another Random Director",
+      "writer": "Another Random Writer",
+      "actors": "Actor X, Actor Y, Actor Z"
+    }
+  ]
+}

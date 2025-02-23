@@ -1,0 +1,117 @@
+{
+  "page": 1,
+  "per_page": 10,
+  "total": 15,
+  "total_pages": 2,
+  "data": [
+    {
+      "title": "Inception",
+      "year": 2010,
+      "rated": "PG-13",
+      "released": "2010-07-16",
+      "runtime": "148 min",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "Christopher Nolan",
+      "writer": "Christopher Nolan",
+      "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page"
+    },
+    {
+      "title": "The Social Network",
+      "year": 2010,
+      "rated": "PG-13",
+      "released": "2010-10-01",
+      "runtime": "120 min",
+      "genre": "Biography, Drama",
+      "director": "David Fincher",
+      "writer": "Aaron Sorkin, Ben Mezrich",
+      "actors": "Jesse Eisenberg, Andrew Garfield, Justin Timberlake"
+    },
+    {
+      "title": "The Avengers",
+      "year": 2012,
+      "rated": "PG-13",
+      "released": "2012-05-04",
+      "runtime": "143 min",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "Joss Whedon",
+      "writer": "Joss Whedon, Zak Penn",
+      "actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson"
+    },
+    {
+      "title": "Interstellar",
+      "rated": "PG-13",
+      "released": "2014-11-07",
+      "runtime": "169 min",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "director": "Christopher Nolan",
+      "writer": "Jonathan Nolan, Christopher Nolan",
+      "actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain"
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "year": 2015,
+      "rated": "R",
+      "released": "2015-05-15",
+      "runtime": "120 min",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "George Miller",
+      "writer": "George Miller, Brendan McCarthy, Nick Lathouris",
+      "actors": "Tom Hardy, Charlize Theron, Nicholas Hoult"
+    },
+    {
+      "title": "La La Land",
+      "year": 2016,
+      "rated": "PG-13",
+      "released": "2016-12-09",
+      "runtime": "128 min",
+      "genre": "Comedy, Drama, Music",
+      "director": "Damien Chazelle",
+      "writer": "Damien Chazelle",
+      "actors": "Ryan Gosling, Emma Stone, Rosemarie DeWitt"
+    },
+    {
+      "title": "Get Out",
+      "year": 2017,
+      "rated": "R",
+      "released": "2017-02-24",
+      "runtime": "104 min",
+      "genre": "Horror, Mystery, Thriller",
+      "director": "Jordan Peele",
+      "writer": "Jordan Peele",
+      "actors": "Daniel Kaluuya, Allison Williams, Bradley Whitford"
+    },
+    {
+      "title": "Black Panther",
+      "year": 2018,
+      "rated": "PG-13",
+      "released": "2018-02-16",
+      "runtime": "134 min",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "Ryan Coogler",
+      "writer": "Ryan Coogler, Joe Robert Cole",
+      "actors": "Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o"
+    },
+    {
+      "title": "Parasite",
+      "year": 2019,
+      "rated": "R",
+      "released": "2019-11-08",
+      "runtime": "132 min",
+      "genre": "Comedy, Drama, Thriller",
+      "director": "Bong Joon Ho",
+      "writer": "Bong Joon Ho, Han Jin-won",
+      "actors": "Kang-ho Song, Sun-kyun Lee, Yeo-jeong Jo"
+    },
+    {
+      "title": "Tenet",
+      "year": 2020,
+      "rated": "PG-13",
+      "released": "2020-09-03",
+      "runtime": "150 min",
+      "genre": "Action, Sci-Fi, Thriller",
+      "director": "Christopher Nolan",
+      "writer": "Christopher Nolan",
+      "actors": "John David Washington, Robert Pattinson, Elizabeth Debicki"
+    }
+  ]
+}
